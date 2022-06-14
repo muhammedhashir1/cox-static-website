@@ -35,3 +35,7 @@ h1{
  /* .centered .tagline{
    color: rgb(236, 35, 35);
 } */
+.para{
+    text-align: left;
+  word-wrap: break-word;
+}
