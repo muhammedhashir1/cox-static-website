@@ -19,6 +19,44 @@ h1{
     height: 100%;
     background-color: rgba(0,0,0,.2);
 } */
+.nav-bar{
+    transition: 1s;
+}
+
+.nav-bar:hover{
+    background-color: #cef134e7;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 5PX;
+    position: relative;
+    /* overflow-y: scroll; */
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    /* overflow-y: scroll; */
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: yellow;
+    position: absolute;
+    left: 0;
+    bottom: -10;
+    transition: 0.5s;
+    /* overflow-y: scroll; */
+}
+.navbar ul li:hover::after{
+    width: 100%;
+    /* overflow-y: scroll; */
+}
+html{
+    scroll-behavior: smooth;
+}
 .banner{
     min-height: 100vh;
     background: url("./images/banner/banner1.jpg") center/cover no-repeat;
@@ -125,4 +163,3 @@ h1{
 .container .box .body .content div h3{
     letter-spacing: 1px;
 }
-
